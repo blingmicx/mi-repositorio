@@ -1,0 +1,802 @@
+
+@media (min-width: 0px) and (max-width: 320px) {
+
+body {
+    background-color: #d2ffec;
+}
+
+    /*MENU DESPLEGABLE*/
+
+
+    #nav-btn{
+        cursor: pointer;
+        height: 25px;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        width: 25px;
+        z-index: 100;
+    }
+    #nav-btn + label{
+        display: block;
+        height: 4px;
+        height: 25px;
+        left: 18px;
+        position: absolute;
+        right: 18px;
+        top: 44px;
+        width: 25px;
+    }
+    #nav-btn + span{
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+        display: block;
+        height: 4px;
+        position: absolute;
+        right: 20px;
+        top: 44px;
+        width: 25px;
+        z-index: 99;
+    }
+    #nav-btn + span::before,
+    #nav-btn + span::after{
+        background-color: rgb(255, 255, 255);
+        content: "";
+        display: block;
+        height: 4px;
+        left: 0;
+        position: absolute;
+        width: 25px;
+    }
+    #nav-btn + span::before{
+        top: -20px;
+    }
+    #nav-btn + span::after{
+        bottom: -20px;
+    }
+    #nav-btn:checked + span{
+        background-color: #F5060A;
+    }
+    #nav-btn + span::before,
+    #nav-btn + span::after{
+        transition-delay: 0.3s, 0s;
+        transition-duration: 0.3s, 0.3s;
+    }
+    #nav-btn + span::before{
+        transition-property: top, transform;
+    }
+    #nav-btn + span::after{
+        transition-property: bottom, transform;
+    }
+    #nav-btn:checked + span{
+        background: none;
+    }
+    #nav-btn:checked + span::before{
+        top: 0;
+        transform: rotate(45deg);
+    }
+    #nav-btn:checked + span::after{
+        bottom: 0;
+        transform: rotate(-45deg);
+    }
+    #nav-btn:checked + span::before,
+    #nav-btn:checked + span::after{
+        transition-delay: 0s, 0.3s;
+    }
+    #nav-btn:checked ~ nav{
+        left: 0px;
+        opacity: 100;
+        position: fixed;
+        visibility: 1;
+        z-index: 98;
+    }
+    #nav-btn:checked ~ nav ul{
+        transform: translate(-50%, -50%);
+    }
+    nav{
+        background: rgba(71, 106, 102, 0.534) none repeat scroll 0% 0%;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+        transition: opacity 0.5s ease 0s, visibility 0s ease 0.5s;
+        visibility: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    nav ul{
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, 0%);
+        transition: all 1s ease-in-out;
+    }
+    nav li{
+        font-size: 30px;
+        list-style: none;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    nav ul li a:hover{
+        color: #fff;
+    }
+    nav li a{
+        font-family: 'Quicksand', sans-serif;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    
+
+
+
+
+    
+/*BANNER*/
+
+
+
+p {
+    font-size: 4vw;
+}
+
+
+    .bannerintegrantes, .bannerconcurso, .bannershinee, .bannergaleria, .banner {
+            color: rgb(255, 255, 255);
+            font-family: 'Gravitas One', cursive;  
+            font-size: 5vw;
+            text-align: center;
+            position: sticky;    
+        }
+
+.bannerintegrantes img, .bannerconcurso img, .bannershinee img, .bannergaleria img, .banner img{
+    max-width: 94vw;
+    position: sticky;
+}
+
+.imgfondo img {
+    filter:brightness(0.6)
+}
+
+        .banner h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            float: right;
+            font-size: 9vw;
+            margin: 30px;
+            text-align: right;
+            font-family: 'Advent Pro', sans-serif;
+            color: rgb(255, 255, 255);
+        }
+
+
+.mainindex{
+    grid-area: mainindex;
+}
+
+#shineeworld {
+    font-size: 11vw;
+    font-family: 'Gravitas One', cursive;
+    color: rgb(255, 255, 255) ;
+}
+
+.contenedor {
+    height: 100%;
+    width: 100%;;
+}
+
+
+
+/*HOME INFO*/
+
+main {
+    font-size: 2vw;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    padding: 20px;
+    text-align: justify;
+    background-color: #ffffff;
+    grid-area: main;
+}
+
+
+
+main h2 {
+    font-size: 5vw;
+    font-family: 'Gravitas One', cursive; ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* INTEGRANTES */
+
+.h1integrantes {
+    margin-top: 0px;
+}
+
+
+    
+    .h1integrantes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+
+
+
+
+
+/*SHINEE*/
+
+
+
+.h1infoshinee {
+    margin-top: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Gravitas One', cursive;
+    color: #ffffff;
+        }
+
+
+
+
+
+
+
+
+
+
+/*CONCURSO*/
+
+.h1concurso {
+    margin-top: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+
+.infocontacto {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    padding: 50px;
+    margin-bottom: 30px;
+    text-align: justify;
+    background-color: #ffffff;
+
+}
+
+.infocontacto h2 {
+    font-size: 40px;
+    font-family: 'Gravitas One', cursive; 
+    text-align: center;
+}
+
+
+/*FORM*/
+
+.contenedor .form .form-header .form-title{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px 0;
+    }
+    .contenedor .form .form-header .form-title span{
+        color: #ffffff;
+    }
+    
+    .contenedor .form {
+        width: 50%;
+        max-width: 500px;
+        margin: auto;
+        padding: 5px 35px;
+        margin-top: 20px;
+        padding-bottom: 30px;
+        border-radius: 10px;
+    }
+    
+    .contenedor .form .form-control-label {
+        display: block;
+        color: rgb(10, 4, 4);
+        font-size: 16px;
+        position: relative;
+    }
+    .contenedor .form .form-input, .form-textarea{
+        background: rgba(255, 255, 255, 0.572);
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgb(195, 247, 225);
+        width: 100%;
+        padding: 10px;
+        font-size: 12px;
+        color: rgb(130, 151, 141)
+    }
+    
+    .contenedor .form .form-textarea{
+        resize: vertical;
+        max-height: 150px;
+        min-height: 50px;
+    }
+    .contenedor .form .btn-submit{
+        width: 100%;
+        outline: none;
+        background:rgb(155, 202, 180);
+        font-size: 16px;
+        border: none;
+        color: rgb(215, 225, 225);
+        padding: 15px 0;
+        cursor: pointer;
+        transition: all .5s ease;
+    }
+    .contenedor .form .btn-submit:hover {
+    background: #ffffff;
+}
+
+
+
+
+
+
+
+
+/*GALERIA*/
+
+
+.cajagaleria h1 {
+    margin-top: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #389681;                   
+    margin: auto ;
+    height: 280px;
+    width: 100%;
+    margin-top: 50px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: whitesmoke ;
+    }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ESCRITORIO*/
+
+
+
+
+@media (min-width: 321px) and (max-width: 2000px ) 
+{
+    
+
+body {
+    margin: 0px;
+    background-color: rgb(161, 185, 181);
+}
+
+
+*{
+    max-width: 100%;
+}
+
+header{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+/*HOME*/
+
+/* BARRA DE NAVEGACION */
+
+nav {
+    width: 100% ;
+    height: 70px;
+    background: rgb(146,175,165);
+    background: linear-gradient(0deg, rgba(146,175,165,0) 0%, rgba(146,175,165,1) 100%);
+    text-align: right;
+    font-family: 'Quicksand', sans-serif;
+    position: fixed;
+
+
+}
+
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+    padding-right: 30px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+
+}
+
+
+ul {
+    display: inline-block;
+}
+
+
+
+
+
+/*BANNER*/
+
+.bannerintegrantes, .bannerconcurso, .bannershinee, .bannergaleria {
+color: rgb(255, 255, 255);
+    font-family: 'Gravitas One', cursive;  
+    font-size: 5vw;
+    text-align: center;   
+}
+
+
+
+
+.imgfondo{
+    float: left;
+    grid-area: imgfondo;
+    display: flex;
+}
+
+.banner h1 {
+    float: right;
+    font-size: 7vw;
+    margin: 30px;
+    text-align: right;
+    font-family: 'Advent Pro', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.banner {
+    display:grid;
+    grid-template-areas: 
+    "imgfondo mainindex";
+
+}
+
+.mainindex{
+    grid-area: mainindex;
+}
+
+#shineeworld {
+    font-size: 10vw;
+    font-family: 'Gravitas One', cursive;
+    color: rgb(255, 255, 255) ;
+}
+
+.contenedor {
+    height: 100%;
+    width: 100%;;
+}
+
+
+
+/*HOME INFO*/
+
+main {
+    font-size: 2vw;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    padding: 50px;
+    text-align: justify;
+    background-color: #ffffff;
+    grid-area: main;
+}
+
+
+
+main h2 {
+    font-size: 5vw;
+    font-family: 'Gravitas One', cursive; ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INTEGRANTES */
+
+.h1integrantes {
+    margin-top: 0px;
+}
+
+
+    
+    .h1integrantes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SHINEE*/
+
+
+
+.h1infoshinee {
+    margin-top: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Gravitas One', cursive;
+    color: #ffffff;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CONCURSO*/
+
+.h1concurso {
+    margin-top: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+
+.infocontacto {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    padding: 50px;
+    margin-bottom: 30px;
+    text-align: justify;
+    background-color: #ffffff;
+
+}
+
+.infocontacto h2 {
+    font-size: 40px;
+    font-family: 'Gravitas One', cursive; 
+    text-align: center;
+}
+
+
+/*FORM*/
+
+.contenedor .form .form-header .form-title{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px 0;
+    }
+    .contenedor .form .form-header .form-title span{
+        color: #ffffff;
+    }
+    
+    .contenedor .form {
+        width: 50%;
+        max-width: 500px;
+        margin: auto;
+        padding: 5px 35px;
+        margin-top: 20px;
+        padding-bottom: 30px;
+        border-radius: 10px;
+    }
+    
+    .contenedor .form .form-control-label {
+        display: block;
+        color: rgb(10, 4, 4);
+        font-size: 16px;
+        position: relative;
+    }
+    .contenedor .form .form-input, .form-textarea{
+        background: rgba(255, 255, 255, 0.572);
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgb(195, 247, 225);
+        width: 100%;
+        padding: 10px;
+        font-size: 12px;
+        color: rgb(130, 151, 141)
+    }
+    
+    .contenedor .form .form-textarea{
+        resize: vertical;
+        max-height: 150px;
+        min-height: 50px;
+    }
+    .contenedor .form .btn-submit{
+        width: 100%;
+        outline: none;
+        background:rgb(155, 202, 180);
+        font-size: 16px;
+        border: none;
+        color: rgb(215, 225, 225);
+        padding: 15px 0;
+        cursor: pointer;
+        transition: all .5s ease;
+    }
+    .contenedor .form .btn-submit:hover {
+    background: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*GALERIA*/
+
+
+.cajagaleria h1 {
+    margin-top: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #389681;                   
+    margin: auto ;
+    height: 280px;
+    width: 100%;
+    margin-top: 50px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: whitesmoke ;
+    }  
+
+
+}
+
+
+
