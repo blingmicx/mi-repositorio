@@ -1,0 +1,60 @@
+.imgfondo{
+    float: left;
+    grid-area: imgfondo;
+    display: flex;
+}
+
+    
+main {
+    font-size: 2vw;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    padding: 50px;
+    text-align: justify;
+    background-color: #ffffff;
+    grid-area: main;
+        .mainindex{
+        grid-area: mainindex;
+        p{
+            font-size: 17px;
+        }
+        h2 {
+        font-size: 5vw;
+        font-family: 'Gravitas One', cursive; 
+        margin: 10px;
+    
+    }
+}
+
+
+
+}
+
+    
+    .video {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+    }
+    
+    .iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    
+    #shineeworld {
+        font-size: 10vw;
+        font-family: 'Gravitas One', cursive;
+        color: rgb(255, 255, 255) ;
+    }
+    
+    .contenedor {
+        height: 100%;
+        width: 100%;;
+    }
+    
+    

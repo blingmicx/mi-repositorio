@@ -1,7 +1,16 @@
+$teal : #20c997;
+
 .hamburguesa {
     visibility: visible; 
+    .a{
+        text-decoration: none;
+    }
 }
-    
+
+.color {
+    background-color: $teal;
+}
+
 .navescritorio {
     display: none;
 }

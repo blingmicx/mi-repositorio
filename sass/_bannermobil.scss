@@ -1,0 +1,36 @@
+.bannerintegrantes, .bannerconcurso, .bannershinee, .bannergaleria { 
+    text-align: center;
+    position: sticky;
+    h1{
+        color: rgb(255, 255, 255);
+        font-family: 'Gravitas One', cursive; 
+        font-size: 10vw;
+    }    
+    img{
+        max-width: 94vw;
+        position: sticky;
+        }
+    }
+    .banner{   
+        color: rgb(255, 255, 255);
+        font-family: 'Gravitas One', cursive;  
+        font-size: 5vw;
+        text-align: center;
+        position: sticky;
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            float: right;
+            font-size: 9vw;
+            margin: 30px;
+            text-align: right;
+            font-family: 'Advent Pro', sans-serif;
+            color: rgb(255, 255, 255);
+            }
+            img{
+                max-width: 94vw;
+                position: sticky;
+                }
+        }

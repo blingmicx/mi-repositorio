@@ -5,25 +5,34 @@
   .navescritorio {
     display: none;
   }
-  /*BANNER*/
   p {
     font-size: 4vw;
   }
-  .bannerintegrantes, .bannerconcurso, .bannershinee, .bannergaleria, .banner {
+  h2 {
+    font-family: "Gravitas One", cursive;
+  }
+  .bannerintegrantes, .bannerconcurso, .bannershinee, .bannergaleria {
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  .bannerintegrantes h1, .bannerconcurso h1, .bannershinee h1, .bannergaleria h1 {
+    color: rgb(255, 255, 255);
+    font-family: "Gravitas One", cursive;
+    font-size: 10vw;
+  }
+  .bannerintegrantes img, .bannerconcurso img, .bannershinee img, .bannergaleria img {
+    max-width: 94vw;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  .banner {
     color: rgb(255, 255, 255);
     font-family: "Gravitas One", cursive;
     font-size: 5vw;
     text-align: center;
     position: -webkit-sticky;
     position: sticky;
-  }
-  .bannerintegrantes img, .bannerconcurso img, .bannershinee img, .bannergaleria img, .banner img {
-    max-width: 94vw;
-    position: -webkit-sticky;
-    position: sticky;
-  }
-  .imgfondo img {
-    filter: brightness(0.6);
   }
   .banner h1 {
     position: absolute;
@@ -37,19 +46,22 @@
     font-family: "Advent Pro", sans-serif;
     color: rgb(255, 255, 255);
   }
+  .banner img {
+    max-width: 94vw;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  .imgfondo img {
+    filter: brightness(0.6);
+  }
   .mainindex {
     grid-area: mainindex;
   }
-  #shineeworld {
-    font-size: 11vw;
+  .mainindex h2 {
+    font-size: 5vw;
     font-family: "Gravitas One", cursive;
-    color: rgb(255, 255, 255);
+    margin: 10px;
   }
-  .contenedor {
-    height: 100%;
-    width: 100%;
-  }
-  /*HOME INFO*/
   main {
     font-size: 2vw;
     font-family: "Quicksand", sans-serif;
@@ -72,19 +84,18 @@
     height: 100%;
     border: 0;
   }
-  .mainindex h2 {
-    font-size: 5vw;
+  #shineeworld {
+    font-size: 11vw;
     font-family: "Gravitas One", cursive;
-    margin: 10px;
+    color: rgb(255, 255, 255);
   }
-  h2 {
-    font-family: "Gravitas One", cursive;
+  .contenedor {
+    height: 100%;
+    width: 100%;
   }
   /* INTEGRANTES */
   .h1integrantes {
     margin-top: 0px;
-  }
-  .h1integrantes {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -123,15 +134,6 @@
     text-align: center;
   }
   /*FORM*/
-  .contenedor .form .form-header .form-title {
-    font-family: "Quicksand", sans-serif;
-    font-weight: normal;
-    text-align: center;
-    padding: 5px 0;
-  }
-  .contenedor .form .form-header .form-title span {
-    color: #ffffff;
-  }
   .contenedor .form {
     width: 50%;
     max-width: 500px;
@@ -141,13 +143,22 @@
     padding-bottom: 30px;
     border-radius: 10px;
   }
+  .contenedor .form .form-header .form-title {
+    font-family: "Quicksand", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px 0;
+  }
+  .contenedor .form .form-header .form-title span {
+    color: #ffffff;
+  }
   .contenedor .form .form-control-label {
     display: block;
     color: rgb(10, 4, 4);
     font-size: 16px;
     position: relative;
   }
-  .contenedor .form .form-input, .form-textarea {
+  .contenedor .form .form-input, .contenedor .form .form-textarea {
     background: rgba(255, 255, 255, 0.572);
     border: none;
     outline: none;
@@ -157,7 +168,7 @@
     font-size: 12px;
     color: rgb(130, 151, 141);
   }
-  .contenedor .form .form-textarea {
+  .contenedor .form .form-input .form-textarea, .contenedor .form .form-textarea .form-textarea {
     resize: vertical;
     max-height: 150px;
     min-height: 50px;
@@ -173,7 +184,7 @@
     cursor: pointer;
     transition: all 0.5s ease;
   }
-  .contenedor .form .btn-submit:hover {
+  .contenedor .form:hover {
     background: #ffffff;
   }
   /*GALERIA*/
@@ -194,7 +205,7 @@
     left: 0;
     width: 100%;
     text-align: center;
-    font-size: 1vw;
+    font-size: 1c;
   }
 }
 /*----------------------------------------------------------------------------------------------------------------*/
@@ -218,8 +229,12 @@
   .hamburguesa {
     display: none;
   }
-  /*HOME*/
-  /* BARRA DE NAVEGACION */
+  h2 {
+    font-family: "Gravitas One", cursive;
+  }
+  p {
+    font-size: 18px;
+  }
   nav {
     width: 100%;
     height: 70px;
@@ -231,18 +246,17 @@
   }
   nav li {
     display: inline-block;
-    padding: 10px;
+    padding: 20px;
     padding-right: 30px;
   }
   nav a {
     text-decoration: none;
     color: white;
-    font-size: 2vw;
+    font-size: 15px;
   }
   nav ul {
     display: inline-block;
   }
-  /*BANNER*/
   .bannerintegrantes, .bannerconcurso, .bannershinee, .bannergaleria {
     text-align: center;
     position: -webkit-sticky;
@@ -253,10 +267,9 @@
     font-family: "Gravitas One", cursive;
     font-size: 10vw;
   }
-  .imgfondo {
-    float: left;
-    grid-area: imgfondo;
-    display: flex;
+  .banner {
+    display: grid;
+    grid-template-areas: "imgfondo mainindex";
   }
   .banner h1 {
     float: right;
@@ -266,15 +279,30 @@
     font-family: "Advent Pro", sans-serif;
     color: rgb(255, 255, 255);
   }
-  .banner {
-    display: grid;
-    grid-template-areas: "imgfondo mainindex";
+  .imgfondo {
+    float: left;
+    grid-area: imgfondo;
+    display: flex;
   }
-  .mainindex {
+  main {
+    font-size: 2vw;
+    font-family: "Quicksand", sans-serif;
+    margin: 0px;
+    padding: 50px;
+    text-align: justify;
+    background-color: #ffffff;
+    grid-area: main;
+  }
+  main .mainindex {
     grid-area: mainindex;
   }
-  .mainindex p {
+  main .mainindex p {
     font-size: 17px;
+  }
+  main .mainindex h2 {
+    font-size: 5vw;
+    font-family: "Gravitas One", cursive;
+    margin: 10px;
   }
   .video {
     position: relative;
@@ -298,26 +326,9 @@
     height: 100%;
     width: 100%;
   }
-  /*HOME INFO*/
-  main {
-    font-size: 2vw;
-    font-family: "Quicksand", sans-serif;
-    margin: 0px;
-    padding: 50px;
-    text-align: justify;
-    background-color: #ffffff;
-    grid-area: main;
-  }
-  main h2 {
-    font-size: 5vw;
-    font-family: "Gravitas One", cursive;
-    margin: 10px;
-  }
   /* INTEGRANTES */
   .h1integrantes {
     margin-top: 0px;
-  }
-  .h1integrantes {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -356,15 +367,6 @@
     text-align: center;
   }
   /*FORM*/
-  .contenedor .form .form-header .form-title {
-    font-family: "Quicksand", sans-serif;
-    font-weight: normal;
-    text-align: center;
-    padding: 5px 0;
-  }
-  .contenedor .form .form-header .form-title span {
-    color: #ffffff;
-  }
   .contenedor .form {
     width: 50%;
     max-width: 500px;
@@ -374,13 +376,22 @@
     padding-bottom: 30px;
     border-radius: 10px;
   }
+  .contenedor .form .form-header .form-title {
+    font-family: "Quicksand", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px 0;
+  }
+  .contenedor .form .form-header .form-title span {
+    color: #ffffff;
+  }
   .contenedor .form .form-control-label {
     display: block;
     color: rgb(10, 4, 4);
     font-size: 16px;
     position: relative;
   }
-  .contenedor .form .form-input, .form-textarea {
+  .contenedor .form .form-input, .contenedor .form .form-textarea {
     background: rgba(255, 255, 255, 0.572);
     border: none;
     outline: none;
@@ -390,7 +401,7 @@
     font-size: 12px;
     color: rgb(130, 151, 141);
   }
-  .contenedor .form .form-textarea {
+  .contenedor .form .form-input .form-textarea, .contenedor .form .form-textarea .form-textarea {
     resize: vertical;
     max-height: 150px;
     min-height: 50px;
@@ -406,7 +417,7 @@
     cursor: pointer;
     transition: all 0.5s ease;
   }
-  .contenedor .form .btn-submit:hover {
+  .contenedor .form:hover {
     background: #ffffff;
   }
   /*GALERIA*/

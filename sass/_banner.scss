@@ -1,0 +1,25 @@
+.bannerintegrantes, .bannerconcurso, .bannershinee, .bannergaleria {
+    text-align: center; 
+    position: sticky;
+    h1{
+        color: rgb(255, 255, 255);
+        font-family: 'Gravitas One', cursive;  
+        font-size: 10vw;
+    }
+
+}
+
+.banner{
+        display:grid;
+        grid-template-areas: 
+        "imgfondo mainindex";
+            h1 {
+                float: right;
+                font-size: 7vw;
+                margin: 30px;
+                text-align: right;
+                font-family: 'Advent Pro', sans-serif;
+                color: rgb(255, 255, 255);
+        }       
+        
+    }
