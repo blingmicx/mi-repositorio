@@ -1,9 +1,6 @@
 .contenedor{
     .form{
-        width: 100%;
-        max-width: 500px;
         margin: auto;
-        padding: 5px 35px;
         margin-top: 20px;
         padding-bottom: 30px;
         border-radius: 10px;
@@ -12,7 +9,7 @@
                 font-family: 'Quicksand', sans-serif;
                 font-weight: normal;
                 text-align: center;
-                padding: 5px 0;
+                font-size: 10vw;
                 }
             .form-title span{
                 color: #ffffff;
@@ -21,7 +18,7 @@
         .form-control-label {
             display: block;
             color: rgb(10, 4, 4);
-            font-size: 16px;
+            font-size: 4vw;
             position: relative;
         }
         .form-input, .form-textarea{
@@ -31,7 +28,7 @@
             border-bottom: 2px solid rgb(195, 247, 225);
             width: 100%;
             padding: 10px;
-            font-size: 12px;
+            font-size: 4vw;
             color: rgb(130, 151, 141);
 
             .form-textarea{
@@ -44,7 +41,7 @@
             width: 100%;
             outline: none;
             background:rgb(155, 202, 180);
-            font-size: 16px;
+            font-size: 4vw;
             border: none;
             color: rgb(215, 225, 225);
             padding: 15px 0;
