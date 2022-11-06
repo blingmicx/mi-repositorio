@@ -1,1 +1,5 @@
 $navcolor:rgb(146,175,165);
+
+@mixin color ($navcolor){
+    color: $navcolor;
+}

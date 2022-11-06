@@ -44,12 +44,12 @@
             width: 100%;
             outline: none;
             background:rgb(155, 202, 180);
-            font-size: 16px;
             border: none;
             color: rgb(255, 255, 255);
             padding: 15px 0;
             cursor: pointer;
-            transition: all .5s ease;
+            transition: all .5s ease;            
+            font-size: 16px;
         }
         &:hover {
             background: #ffffff;

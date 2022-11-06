@@ -12,7 +12,7 @@
     nav {    
         font-family: 'Quicksand', sans-serif;
         color: white;
-        background-color: $navcolor;
+        @include color ($teal);
         a {
             text-decoration: none;
             color: white;
@@ -20,12 +20,12 @@
         }
 }
 .bg-teal, .p-4 {
-    background-color: $navcolor;
+    @include color ($teal);
 }
 
 
 .navbar-toggler-icon, .container-fluid {
-    background-color: $navcolor;
+    @include color ($teal);
 }
 
 }

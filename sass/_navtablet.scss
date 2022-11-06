@@ -21,12 +21,12 @@
         }
 
 .bg-teal, .p-4 {
-    background-color: $navcolor;
+    @include color ($teal);
 }
 
 
 .navbar-toggler-icon, .container-fluid {
-    background-color: $navcolor;
+    @include color ($teal);
 }
 
 

@@ -16,20 +16,12 @@
                 }    
         }
         .form-control-label {
-            display: block;
-            color: rgb(10, 4, 4);
+            @extend .form-control-label;
             font-size: 4vw;
-            position: relative;
         }
         .form-input, .form-textarea{
-            background: rgba(255, 255, 255, 0.572);
-            border: none;
-            outline: none;
-            border-bottom: 2px solid rgb(195, 247, 225);
-            width: 100%;
-            padding: 10px;
+            @extend .form-input, .form-textarea;
             font-size: 4vw;
-            color: rgb(130, 151, 141);
 
             .form-textarea{
                 resize: vertical;
@@ -38,15 +30,8 @@
             }
         }
         .btn-submit{
-            width: 100%;
-            outline: none;
-            background:rgb(155, 202, 180);
+            @extend .btn-submit;
             font-size: 4vw;
-            border: none;
-            color: rgb(255, 255, 255);
-            padding: 15px 0;
-            cursor: pointer;
-            transition: all .5s ease;
         }
         &:hover {
             background: #ffffff;
