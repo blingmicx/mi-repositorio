@@ -1,27 +1,27 @@
 $teal : #92afa5;
 
-
 .navescritorio {
     display: none;
 }
 
 .hamburguesa {
     visibility: visible; 
+
     .menu {
-        font-size: 8vw;
+        font-size: 30px;
         color: white;
     }
-    
+
     nav {    
         font-family: 'Quicksand', sans-serif;
         color: white;
-        background-color: $teal;
-        a {
-            text-decoration: none;
-            color: white;
-            font-size: 6vw;
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+            }
         }
-}
+
 .bg-teal, .p-4 {
     background-color: $teal;
 }
@@ -30,5 +30,6 @@ $teal : #92afa5;
 .navbar-toggler-icon, .container-fluid {
     background-color: $teal;
 }
+
 
 }

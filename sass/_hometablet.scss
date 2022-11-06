@@ -1,10 +1,8 @@
-.banner img {
-    max-width: 100%;
+.imgfondo{
+    float: left;
+    grid-area: imgfondo;
+    display: flex;
 }
-
-.imgfondo img {
-    filter:brightness(0.6);
-    }
 
 .mainindex{
     grid-area: mainindex;
@@ -53,6 +51,3 @@ main {
     height: 100%;
     width: 100%;;
 }
-
-
-
