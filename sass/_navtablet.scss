@@ -1,5 +1,3 @@
-$teal : #92afa5;
-
 .navescritorio {
     display: none;
 }
@@ -23,12 +21,12 @@ $teal : #92afa5;
         }
 
 .bg-teal, .p-4 {
-    background-color: $teal;
+    background-color: $navcolor;
 }
 
 
 .navbar-toggler-icon, .container-fluid {
-    background-color: $teal;
+    background-color: $navcolor;
 }
 
 

@@ -15,11 +15,13 @@
 @import "navmobil";
     p {
         font-size: 4vw;
+        margin: 5px;
     }
     
     h2 {
         font-family: 'Gravitas One', cursive;
         font-size: 8vw;
+        margin: 5px
     }
     
 @import "bannermobil";
@@ -30,40 +32,23 @@
     
     /* INTEGRANTES */
     
-        
-    .h1integrantes {
-    margin-top: 0px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    }
+
+
+    @import "cardmobil";
     
     
     /*SHINEE*/ 
     
-    .h1infoshinee {
-        margin-top: 0px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: 'Gravitas One', cursive;
-        color: #ffffff;
-            }
-    
-    
+            .fotosdiscografia img {
+                width: 80vw;
+                margin: auto;
+                margin-bottom: 40px;
+                margin-top: 20px;
+                display: block;
+                }
     /*CONCURSO*/
     
-    .h1concurso {
-        margin-top: 0px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        }
-    
-    
+
     .infocontacto {
         font-size: 20px;
         font-family: 'Quicksand', sans-serif;
@@ -75,29 +60,12 @@
     
     }
     
-    .infocontacto h2 {
-        font-size: 40px;
-        font-family: 'Gravitas One', cursive; 
-        text-align: center;
-    }
-    
+
     
     /*FORM*/
     
     @import "formulariomobil";
-    
-    /*GALERIA*/
-    
-    
-    .cajagaleria h1 {
-        margin-top: 0px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        
-    }
-    
+
     
     /*FOOTER*/
     
@@ -154,10 +122,13 @@
         
         h2 {
             font-family: 'Gravitas One', cursive;
+            font-size: 45px;
+            margin: 15px;
         }
         
         p {
             font-size: 18px;
+            margin: 15px
         }
         
         @import "navtablet";
@@ -170,39 +141,26 @@
             
             /* INTEGRANTES */
         
-                .h1integrantes {
-                margin-top: 0px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                }
-        
+    
+        @import "cardmobil";
+
             /*SHINEE*/
             
             
             
-            .h1infoshinee {
-                margin-top: 0px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-family: 'Gravitas One', cursive;
-                color: #ffffff;
-                    }
-                
+
+
+                    .fotosdiscografia img {
+                        width: 1000px;
+                        margin: auto;
+                        margin-bottom: 40px;
+                        margin-top: 20px;
+                        display: block;
+                        }
             
             /*CONCURSO*/
             
-            .h1concurso {
-                margin-top: 0px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                }
-            
+
             
             .infocontacto {
                 font-size: 20px;
@@ -215,32 +173,12 @@
             
             }
             
-            .infocontacto h2 {
-                font-size: 40px;
-                font-family: 'Gravitas One', cursive; 
-                text-align: center;
-            }
-            
-            
             /*FORM*/
     
-            @import "formulariomobil";
+            @import "formulariotablet";
     
         
         
-            
-            /*GALERIA*/
-            
-            
-            .cajagaleria h1 {
-                margin-top: 0px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                
-            }
-            
             
             
             /*BOTON*/
@@ -318,10 +256,11 @@
 
 h2 {
     font-family: 'Gravitas One', cursive;
+    font-size: 50px;
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
 }
 
     
@@ -335,40 +274,23 @@ p {
     
     /* INTEGRANTES */
 
-        .h1integrantes {
-        margin-top: 0px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        }
+@import "card";
+
 
     /*SHINEE*/
     
     
-    
-    .h1infoshinee {
-        margin-top: 0px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: 'Gravitas One', cursive;
-        color: #ffffff;
-            }
-        
-    
+    .fotosdiscografia img {
+        width: 1000px;
+        margin: auto;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        display: block;
+        }
+
     /*CONCURSO*/
     
-    .h1concurso {
-        margin-top: 0px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        }
-    
-    
+
     .infocontacto {
         font-size: 20px;
         font-family: 'Quicksand', sans-serif;
@@ -389,24 +311,8 @@ p {
     
     /*FORM*/
 
-
     @import "formulario";
 
-
-    
-    /*GALERIA*/
-    
-    
-    .cajagaleria h1 {
-        margin-top: 0px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        
-    }
-    
-    
     
     /*BOTON*/
     
@@ -439,7 +345,6 @@ p {
         font-size: 20px;
     }
     
-
     
     
     }

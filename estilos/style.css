@@ -34,10 +34,12 @@
   }
   p {
     font-size: 4vw;
+    margin: 5px;
   }
   h2 {
     font-family: "Gravitas One", cursive;
     font-size: 8vw;
+    margin: 5px;
   }
   .bannerintegrantes, .bannerconcurso, .bannershinee, .bannergaleria {
     text-align: center;
@@ -48,6 +50,13 @@
     color: rgb(255, 255, 255);
     font-family: "Gravitas One", cursive;
     font-size: 10vw;
+    margin-top: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Gravitas One", cursive;
+    color: #ffffff;
   }
   .bannerintegrantes img, .bannerconcurso img, .bannershinee img, .bannergaleria img {
     max-width: 100%;
@@ -125,31 +134,37 @@
     width: 100%;
   }
   /* INTEGRANTES */
-  .h1integrantes {
-    margin-top: 0px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .card-group {
+    margin-bottom: 60px;
+    margin-top: 30px;
+  }
+  .card-group .card {
+    background-color: rgba(159, 208, 197, 0.57);
+  }
+  .card-group .card h3 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .card-group .card p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    text-align: center;
+  }
+  .card-group .card img {
+    height: 600px;
   }
   /*SHINEE*/
-  .h1infoshinee {
-    margin-top: 0px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Gravitas One", cursive;
-    color: #ffffff;
+  .fotosdiscografia img {
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    display: block;
   }
   /*CONCURSO*/
-  .h1concurso {
-    margin-top: 0px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
   .infocontacto {
     font-size: 20px;
     font-family: "Quicksand", sans-serif;
@@ -158,11 +173,6 @@
     margin-bottom: 30px;
     text-align: justify;
     background-color: #ffffff;
-  }
-  .infocontacto h2 {
-    font-size: 40px;
-    font-family: "Gravitas One", cursive;
-    text-align: center;
   }
   /*FORM*/
   .contenedor .form {
@@ -207,21 +217,13 @@
     background: rgb(155, 202, 180);
     font-size: 4vw;
     border: none;
-    color: rgb(215, 225, 225);
+    color: rgb(255, 255, 255);
     padding: 15px 0;
     cursor: pointer;
     transition: all 0.5s ease;
   }
   .contenedor .form:hover {
     background: #ffffff;
-  }
-  /*GALERIA*/
-  .cajagaleria h1 {
-    margin-top: 0px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   /*FOOTER*/
   footer {
@@ -256,9 +258,12 @@
   }
   h2 {
     font-family: "Gravitas One", cursive;
+    font-size: 45px;
+    margin: 15px;
   }
   p {
     font-size: 18px;
+    margin: 15px;
   }
   .navescritorio {
     display: none;
@@ -290,12 +295,16 @@
     position: -webkit-sticky;
     position: sticky;
     background: rgb(161, 185, 181);
-    background: linear-gradient(180deg, rgb(161, 185, 181) 16%, rgba(161, 185, 181, 0) 100%);
   }
   .bannerintegrantes h1, .bannerconcurso h1, .bannershinee h1, .bannergaleria h1 {
     color: rgb(255, 255, 255);
     font-family: "Gravitas One", cursive;
     font-size: 10vw;
+    margin-top: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .banner {
     display: grid;
@@ -355,31 +364,37 @@
     width: 100%;
   }
   /* INTEGRANTES */
-  .h1integrantes {
-    margin-top: 0px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .card-group {
+    margin-bottom: 60px;
+    margin-top: 30px;
+  }
+  .card-group .card {
+    background-color: rgba(159, 208, 197, 0.57);
+  }
+  .card-group .card h3 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .card-group .card p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    text-align: center;
+  }
+  .card-group .card img {
+    height: 600px;
   }
   /*SHINEE*/
-  .h1infoshinee {
-    margin-top: 0px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Gravitas One", cursive;
-    color: #ffffff;
+  .fotosdiscografia img {
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    display: block;
   }
   /*CONCURSO*/
-  .h1concurso {
-    margin-top: 0px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
   .infocontacto {
     font-size: 20px;
     font-family: "Quicksand", sans-serif;
@@ -388,11 +403,6 @@
     margin-bottom: 30px;
     text-align: justify;
     background-color: #ffffff;
-  }
-  .infocontacto h2 {
-    font-size: 40px;
-    font-family: "Gravitas One", cursive;
-    text-align: center;
   }
   /*FORM*/
   .contenedor .form {
@@ -405,7 +415,7 @@
     font-family: "Quicksand", sans-serif;
     font-weight: normal;
     text-align: center;
-    font-size: 7vw;
+    font-size: 55px;
   }
   .contenedor .form .form-header .form-title span {
     color: #ffffff;
@@ -413,7 +423,7 @@
   .contenedor .form .form-control-label {
     display: block;
     color: rgb(10, 4, 4);
-    font-size: 4vw;
+    font-size: 30px;
     position: relative;
   }
   .contenedor .form .form-input, .contenedor .form .form-textarea {
@@ -423,7 +433,7 @@
     border-bottom: 2px solid rgb(195, 247, 225);
     width: 100%;
     padding: 10px;
-    font-size: 4vw;
+    font-size: 20px;
     color: rgb(130, 151, 141);
   }
   .contenedor .form .form-input .form-textarea, .contenedor .form .form-textarea .form-textarea {
@@ -435,23 +445,15 @@
     width: 100%;
     outline: none;
     background: rgb(155, 202, 180);
-    font-size: 4vw;
+    font-size: 40px;
     border: none;
-    color: rgb(215, 225, 225);
+    color: rgb(255, 255, 255);
     padding: 15px 0;
     cursor: pointer;
     transition: all 0.5s ease;
   }
   .contenedor .form:hover {
     background: #ffffff;
-  }
-  /*GALERIA*/
-  .cajagaleria h1 {
-    margin-top: 0px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   /*BOTON*/
   .boton {
@@ -502,9 +504,10 @@
   }
   h2 {
     font-family: "Gravitas One", cursive;
+    font-size: 50px;
   }
   p {
-    font-size: 18px;
+    font-size: 20px;
   }
   nav {
     width: 100%;
@@ -523,7 +526,7 @@
   nav a {
     text-decoration: none;
     color: white;
-    font-size: 15px;
+    font-size: 25px;
   }
   nav ul {
     display: inline-block;
@@ -533,12 +536,16 @@
     position: -webkit-sticky;
     position: sticky;
     background: rgb(161, 185, 181);
-    background: linear-gradient(180deg, rgb(161, 185, 181) 16%, rgba(161, 185, 181, 0) 100%);
   }
   .bannerintegrantes h1, .bannerconcurso h1, .bannershinee h1, .bannergaleria h1 {
     color: rgb(255, 255, 255);
     font-family: "Gravitas One", cursive;
     font-size: 10vw;
+    margin-top: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .banner {
     display: grid;
@@ -572,10 +579,10 @@
   main .mainindex p {
     font-size: 17px;
   }
-  main .mainindex h2 {
-    font-size: 5vw;
+  h2 {
+    font-size: 4vw;
     font-family: "Gravitas One", cursive;
-    margin: 10px;
+    margin-top: 10px;
   }
   .video {
     position: relative;
@@ -600,31 +607,37 @@
     width: 100%;
   }
   /* INTEGRANTES */
-  .h1integrantes {
-    margin-top: 0px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .card-group {
+    margin-bottom: 60px;
+    margin-top: 30px;
+  }
+  .card-group .card {
+    background-color: rgba(159, 208, 197, 0.57);
+  }
+  .card-group .card h3 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .card-group .card p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    text-align: center;
+  }
+  .card-group .card img {
+    height: 600px;
   }
   /*SHINEE*/
-  .h1infoshinee {
-    margin-top: 0px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Gravitas One", cursive;
-    color: #ffffff;
+  .fotosdiscografia img {
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    display: block;
   }
   /*CONCURSO*/
-  .h1concurso {
-    margin-top: 0px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
   .infocontacto {
     font-size: 20px;
     font-family: "Quicksand", sans-serif;
@@ -685,21 +698,13 @@
     background: rgb(155, 202, 180);
     font-size: 16px;
     border: none;
-    color: rgb(215, 225, 225);
+    color: rgb(255, 255, 255);
     padding: 15px 0;
     cursor: pointer;
     transition: all 0.5s ease;
   }
   .contenedor .form:hover {
     background: #ffffff;
-  }
-  /*GALERIA*/
-  .cajagaleria h1 {
-    margin-top: 0px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   /*BOTON*/
   .boton {

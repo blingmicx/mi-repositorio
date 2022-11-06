@@ -2,14 +2,19 @@
     text-align: center; 
     position: sticky;
     background: rgb(161,185,181);
-background: linear-gradient(180deg, rgba(161,185,181,1) 16%, rgba(161,185,181,0) 100%);
     h1{
         color: rgb(255, 255, 255);
         font-family: 'Gravitas One', cursive;  
         font-size: 10vw;
+        margin-top: 0px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
 }
+
 
 .banner{
         display:grid;
